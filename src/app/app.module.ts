@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TipoProductoComponent } from './modulo-inventario/tipo-producto/tipo-producto.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
+import { PersonaComponent } from './modulo-persona/persona/persona.component';
 
 
 
@@ -13,6 +14,7 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     TipoProductoComponent,
+    PersonaComponent,
    
   ],
   imports: [
