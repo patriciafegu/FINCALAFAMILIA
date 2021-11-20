@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
   { path: 'tipo', component: TipoProductoComponent },
   { path: 'productos', component: ProductosComponent },
-  {path: 'inventario', component: InventarioComponent }
+  {path: 'inventario', component: InventarioComponent },
   { path: 'peo', component: PersonaComponent }
 ];
 

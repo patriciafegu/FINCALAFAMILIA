@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Tproductos} from '../../SERVICES/services_inventario/tproducto.service';
+import {ServiceInventario} from '../../SERVICES/services_inventario/moduloInventario.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,19 +8,20 @@ import {Router} from '@angular/router';
   styleUrls: ['./tipo-producto.component.css']
 })
 export class TipoProductoComponent implements OnInit {
-  //constructor(private CrudService:CrudService, private router:Router) { }
   tipoProductos:any = [];
   
-  constructor(private Tproductos: Tproductos) { }
+   constructor(private serviceInventario:ServiceInventario, private router:Router) { }
 
 
   ngOnInit(): void {
-    this.Tproductos.GetBooks().subscribe(res => {
+    this.serviceInventario.GetTipos().subscribe(res => {
       console.log(res)
       this.tipoProductos =<any>res;
     });
     
   }
+
+  
 
 }
 
