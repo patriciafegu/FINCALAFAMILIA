@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AppRoutingModule, rountingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TipoProductoComponent } from './modulo-inventario/tipo-producto/tipo-producto.component';
-import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
+import { PersonaComponent } from './modulo-persona/persona/persona.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TipoProductoComponent,
+    rountingComponents,
+    PersonaComponent
    
   ],
   imports: [
