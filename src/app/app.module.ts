@@ -8,12 +8,12 @@ import { PersonaComponent } from './modulo-persona/persona/persona.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     rountingComponents,
     PersonaComponent
-   
   ],
   imports: [
     BrowserModule,

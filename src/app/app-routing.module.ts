@@ -5,6 +5,7 @@ import { TipoProductoComponent } from './modulo-inventario/tipo-producto/tipo-pr
 import { ProductosComponent } from './modulo-inventario/productos/productos.component';
 import { InventarioComponent } from './modulo-inventario/inventario/inventario.component';
 import {PersonaComponent} from './modulo-persona/persona/persona.component';
+import { PlantaComponent } from './modulo-appqr/plantas/plantas.component';
 
 const routes: Routes = [
     //{ path: '', redirectTo: '/dashboard', pathMatch: 'full' },
@@ -12,7 +13,9 @@ const routes: Routes = [
   { path: 'tipo', component: TipoProductoComponent },
   { path: 'productos', component: ProductosComponent },
   {path: 'inventario', component: InventarioComponent },
-  { path: 'peo', component: PersonaComponent }
+  { path: 'peo', component: PersonaComponent },
+  { path: 'planta', component: PlantaComponent}
+
 ];
 
 @NgModule({
@@ -24,5 +27,8 @@ export const rountingComponents=[
   DashboardComponent,
   TipoProductoComponent,
   ProductosComponent,
-  InventarioComponent, PersonaComponent ]
+  InventarioComponent, 
+  PersonaComponent,
+  PlantaComponent
+]
 
