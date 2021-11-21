@@ -24,5 +24,5 @@ export const rountingComponents=[
   DashboardComponent,
   TipoProductoComponent,
   ProductosComponent,
-  InventarioComponent ]
+  InventarioComponent, PersonaComponent ]
 

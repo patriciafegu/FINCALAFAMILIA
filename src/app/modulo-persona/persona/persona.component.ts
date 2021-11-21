@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {people} from '../../SERVICESPe/service_persona/personas.service';
+import {Servicepeople} from '../../SERVICES/service_persona/personas.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -11,10 +11,10 @@ export class PersonaComponent implements OnInit {
 
   perso:any = [];
 
-  constructor(private people: people) { }
+  constructor(private Servicepeople: Servicepeople, private router: Router) { }
 
   ngOnInit(): void {
-    this.people.GetBooks().subscribe(res => {
+    this.Servicepeople.GetPersonas().subscribe(res => {
       console.log(res)
       this.perso =<any>res;
     });
